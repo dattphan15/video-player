@@ -13,7 +13,7 @@ const VIDEOS = {
 class App extends React.Component {
   constructor(props) {
     super(props);
-
+    this.chooseVideo = this.chooseVideo.bind(this);
     this.state = { src: VIDEOS.fast };
   }
 
