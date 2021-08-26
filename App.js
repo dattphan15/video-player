@@ -27,7 +27,7 @@ class App extends React.Component {
     return (
       <div>
         <h1>Video Player</h1>
-        <Menu />
+        <Menu chooseVideo={this.chooseVideo} />
         <Video src={this.state.src} />
       </div>
     );
