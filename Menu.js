@@ -1,6 +1,11 @@
 import React from 'react';
 
 export class Menu extends React.Component {
+  constructor(props) {
+    super(props);
+    this.handleClick = this.handleClick.bind(this);
+  }
+
   // chooseVideo expects a string as an argument. But event handlers are automatically passed event objects, not strings. This handleClick function will equal the text of a clicked radio button.
   handleClick(e) {
     let text = e.target.value;
